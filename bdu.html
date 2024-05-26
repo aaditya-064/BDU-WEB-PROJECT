@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddha Dana Udhyog | We produce productive animal products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;;
+}
+
+
+body{
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+header{
+    height: 60px;
+    background: #843B44;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+    font-size: 14px;
+    justify-content: center;
+}
+
+header .nav_bar {
+    background: #843B44;
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .nav_bar .main_div{
+    display: flex;    
+    justify-content: space-between;  
+    align-items: center;
+    gap: 30px;
+}
+
+header .nav_bar .main_div .nav_left {
+    display: flex;
+}
+
+header .nav_bar .main_div .nav_left img{
+    width: 50px;
+    height: 50px;
+
+}
+
+header .nav_bar .main_div .nav_links {
+    outline: 0;
+}
+
+header .nav_bar .main_div .nav_right .nav_links .menu{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #007AB7;
+    border: 0;
+    border-radius: 7px;
+    color: white;
+    outline: 0;
+    margin-top: 5px;
+    display: none;
+}
+
+header .nav_bar .main_div .nav_right .menu:hover{
+    opacity: 0.7;
+    transition: 0.6s;
+    background: grey;
+    color: #007AB7;
+    font-weight: bold;
+    font-size: 15px;
+    outline: 0;
+}
+
+@media (max-width: 600px){
+    .nav_left .nav_links.hide{
+        display: none;
+    }
+
+    header .nav_bar .main_div .nav_right .nav_links .menu{
+        display: block;
+    }
+
+    header{
+        height:70px;
+    }
+
+    header .nav_bar .main_div{
+        gap: 0px;
+        /* flex-direction: column; */
+    }
+
+    .nav_left .nav_links{
+        font-size: 20px;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: -10%;
+        background: white;
+        font-weight: bold;
+        width: 100%;
+        /* margin-left: -300px; */
+        margin-top: 35px;
+        padding: 20px;
+        opacity: 0.9;
+
+    }
+}
+
+header .nav_bar .nav_links {
+    display: flex;
+    align-items: center;    
+    gap: 30px;
+    margin-left: 40px;
+}
+
+
+
+.nav_bar .nav_links li{
+    list-style-type: none;
+}
+
+.nav_bar .nav_left .nav_links li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+main .content{
+    position: relative;
+    width: 100%;
+    height: 560px;
+}
+
+main .content img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .content .inside_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+main .content .inside_text_content{
+    color: #fff;
+}
+
+main .content .inside_text .inside_text_content h1{
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+main .content .inside_text .inside_text_content h4{
+    margin-top: 20px;
+    color: white;
+}
+
+main .content .connect_{
+    position: relative;
+    top: 120px;
+    width: 300px;
+}
+
+main .content .inside_text .connect_ li{
+    position: relative;
+    /* margin-left: 108px; */
+    list-style-type: none;
+    margin-left: -125px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main .content .inside_text .connect_email_{
+    display: flex;
+    gap: 10px;
+}
+
+main .content .inside_text .connect_ #email,
+main .content .inside_text .connect_ #btn{
+    outline: 0;
+    padding: 10px 1rem;
+    display: flex;
+}
+
+main .content .inside_text .connect_ #email {
+    width: 250px;
+}
+
+::placeholder {
+    font-size: 15px;
+    color: grey;
+}
+
+main .content .inside_text .connect_ #btn{
+    background: #C85157;
+    border: 0;
+    height: 39px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media(max-width: 690px){
+    main .content .inside_text .inside_text_content h1{
+        font-size: 25px;
+    }
+
+    main .content .inside_text .inside_text_content h4{
+        font-size: 15px;;
+    }
+}
+
+section .sub_div{
+    margin-top: 30px;
+}
+
+section .sub_div h1{
+    color: #007AB7; 
+    font-size: 25px;
+    text-align: center;
+}
+
+section .qualities_ {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+section .qualities_ .icon_box{
+    margin-top: 0rem;
+    text-align: center;
+}
+
+section .qualities_ .icon_box img{
+    width: 90px;
+    height: 90px;
+}
+
+section .qualities_ .icon_box h4{
+    margin-top: 10px;
+    color: #007AB7;  
+    /* width: 100px;   */
+    /* text-align: center; */
+}
+
+
+
+.know_about_us{
+    margin-top: 130px;
+}
+
+.know_about_us .describing_us{
+    display: flex;
+    gap: 40px;
+}
+
+.know_about_us .describing_us img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 5px solid #4D148C;
+}
+
+.know_about_us .describing_us .paragraph_{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.know_about_us .describing_us .paragraph_ h4{
+    color: #007AB7; 
+    font-size: 19px;
+    font-family: cursive;
+    font-style: italic;
+}
+
+.know_about_us .describing_us .paragraph_ h1{
+    font-size: 29px;
+}
+
+.know_about_us .describing_us .paragraph_ p{
+    color: black;
+}
+
+
+@media (max-width: 850px) {
+    section .qualities_{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    section .qualities_ .icon_box{
+        text-align: center;
+        margin-top: 40px;
+
+    }
+
+    .know_about_us .describing_us{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <navbar class="nav_bar container">
+            <div class="main_div">
+                <div class="nav_left">
+                    <img src="logo.png"/>
+                    <ul class="nav_links hide">
+                        <li><a href="#">Products <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    
+                </div>
+                <div class="nav_right">
+                    <ul class="nav_links">
+                        <button class="menu">MENU</button>    
+                    </ul>
+                </div>
+            </div>
+        </navbar>
+    </header>
+    
+    
+    
+    <main>
+        <div class="content">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipN-P-HzB4VZk37_kl7Qz9dY936hQ4TSevue7drU=s1360-w1360-h1020" />
+            
+            <div class="inside_text">
+                <div class="inside_text_content">
+                <h1>Buddha Dana Udhyog Pvt. Ltd.</h1>
+                <h4>Innovating feed solutions for sustainable agriculture in Nepal under MD Mr. Bindu Lal Shrestha's leadership.</h4>
+            </div>
+                <ul class="connect_">
+                    <li>Get Connected With Us!</li>
+                <div class="connect_email_">
+                    <input type="email" id="email" placeholder="Enter your Email Address" />
+                    <button type="submit" id="btn">Submit</button>
+                </div>
+                </ul>
+            </div>    
+        </div>
+        
+        <section class="container">
+            <div class="sub_div">
+            <h1>Our Qualities</h1>
+            <div class="qualities_">
+                <div class="icon_box">
+                    <img src="delivery.png" />
+                    <h4>FAST DELIVERY</h4>
+                </div>
+                <div class="icon_box">
+                    <img src="https://www.fedex.com/content/dam/fedex/us-united-states/Testing/images/20201/Q3/icon_currency_usd_purple_lg.svg/_jcr_content/renditions/cq5dam.thumbnail.727.463.png" />
+                    <h4>SUSTAINABLE PRICE</h4>
+                </div>
+                
+                <div class="icon_box">
+                    <img src="chicken.png" />
+                    <h4>NUTRIENT RICH FEED</h4>
+                </div>
+                
+                <div class="icon_box">
+                    <img src="https://github.com/aaditya-064/BuddhaDanaUdhyog/blob/main/web/cow.png?raw=true" />
+                    <h4>OPTIMISTIC PRODUCT</h4>
+                </div>
+
+            </div>
+        </div>
+        </section>
+
+        <section class="know_about_us container">
+            <div class="describing_us">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipP4z1SRUPzhMdJPZRzvYZSIezm1oySiALYfmp-l=s1360-w1360-h1020" />
+                <div class="paragraph_">
+                    <h4>Know About Us</h4>
+                    <h1>We Have Solutions For Agriculture Need.</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid veniam cupiditate alias, quasi inventore totam ipsa fugit repellat molestias optio praesentium nesciunt ut, saepe sed minus expedita debitis consectetur doloremque! Eligendi distinctio tenetur magnam, quos vel cum repellendus provident incidunt est in odio exercitationem? Quidem vel exercitationem dolores expedita optio? Tempora quia doloribus sequi quasi nulla fuga, facilis nobis laborum rerum possimus magnam neque, ad, nemo consequatur libero totam sit eius facere voluptatem hic veritatis. Consequatur, itaque? Cumque sit libero a officiis sequi, at consequatur! Ullam, vero a reiciendis ut quisquam molestias possimus ducimus dignissimos aspernatur doloremque facilis architecto fugiat quod voluptas! Laboriosam, voluptatibus fugit unde eaque suscipit voluptatum blanditiis impedit error minus neque maiores amet fuga maxime ipsum cum voluptas, ea nemo vero quae? Ipsa, autem! Aliquid, deleniti in, sequi libero laudantium laborum consequuntur laboriosam officia doloribus sint id?</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    
+    <footer></footer>
+    <script src="https://kit.fontawesome.com/2c92abfc3e.js" crossorigin="anonymous"></script>
+    <script>
+        const menuButton = document.querySelector('.menu');
+        const navLinks = document.querySelector('.nav_links')
+
+
+        menuButton.addEventListener("click", () =>{
+        console.log("hello world")
+        navLinks.classList.toggle("hide")
+})
+    </script>
+</body>
+</html>
+
