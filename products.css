@@ -241,8 +241,19 @@ main .content{
 
 .products .tags_ a {
     color: black;
-    text-decoration: none;
-    
+    text-decoration: none;   
+}
+
+#pig{
+    top: 70%;
+}
+
+#fish{
+    width: 200px;
+}
+
+.cattle_head{
+    width: 200px;
 }
 
 .products img{
@@ -258,12 +269,6 @@ main .content{
 .products_description.srijan{
     margin-top: 100px;
 }
-
-
-
-
-
-
 
 
 
@@ -333,6 +338,7 @@ footer .company_services{
     display: flex;
     flex-direction: column;
     text-align: right;
+    gap: 20px;
 }
 
 footer .company_services h2 a{

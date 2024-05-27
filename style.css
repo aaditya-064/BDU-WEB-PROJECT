@@ -411,6 +411,7 @@ footer .company_services{
     display: flex;
     flex-direction: column;
     text-align: right;
+    gap: 20px;
 }
 
 footer .company_services h2 a{
