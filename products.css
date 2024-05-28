@@ -24,7 +24,7 @@ body{
 
 header{
     height: 60px;
-    background: #843B44;
+    /* background: #843B44; */
     display: flex;
     position: fixed;
     top: 0;
@@ -33,10 +33,12 @@ header{
     align-items: center;
     font-size: 14px;
     justify-content: center;
+    /* background: linear-gradient(to right, ) */
+    background: #002D62;
 }
 
 header .nav_bar {
-    background: #843B44;
+    background: #002D62;
     width: 100%;    
     display: flex;
     align-items: center;
@@ -151,6 +153,7 @@ main {
     flex: 1;
     position: relative;
     top: 65px;
+    padding-bottom: 40px;
 }
 
 main .content{
@@ -276,7 +279,7 @@ main .content{
 
 
 footer {
-    background: #843B44;
+    background: black;
     padding: 0;
     /* height: 200px; */
     margin-top: 60px;
@@ -326,7 +329,13 @@ footer .company_features .company_features_list{
 footer .company_features .company_features_list li a{
     color: white;
     text-decoration: none;
+    transition: all 0.4s ease-in-out;
 }
+
+footer .company_features .company_features_list li a:hover{
+    font-size: 30px;
+}
+
 
 footer .company_features,
 footer .company_info,
@@ -348,12 +357,12 @@ footer .company_services h2 a{
     text-decoration: none;
     border-bottom: 3px solid black;
     padding-bottom: 5px;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.5s ease-in-out;
 } 
 
 footer .company_services h2 a:hover{
     color: black;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.5s ease-in-out;
     border-bottom: 3px solid white;
 }
 
@@ -363,15 +372,43 @@ footer .company_services h2 a:hover{
     margin-top: 7px;
 } */
 
-footer .connect_email_ {
-    margin-top: 20px;
-    margin-left: 80px;
-    
+.contact_way{
+    text-align: center;
+    /* padding-bottom: 20px; */
+    margin-bottom: 20px;
 }
+
+.contact_way legend{
+    font-size: 30px;
+    color: grey;
+    font-weight: bold;
+}
+
+.contact_way .contact_platform{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 50px;
+    /* justify-content:space-evenly; */
+    margin-top: 15px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.contact_way .contact_platform a{
+    color: white;
+    font-size: 30px;
+    transition: all  0.3s ease-in-out;
+}
+
+.contact_way .contact_platform a:hover{
+    font-size: 40px;
+}
+
 
 @media (max-width: 1060px){
     footer{
-        height: 100%;
+        height: 1000px;
     }
     footer .main_footer {
         flex-direction: column;
@@ -386,4 +423,12 @@ footer .connect_email_ {
         margin-left: 0px;   
     }
 
+    .contact_way{
+        position: relative;
+        top: 40%;
+    }
+    .contact_platform{
+        flex-direction: column;
+        /* background: orange; */
+    }
 }
