@@ -154,6 +154,7 @@ main {
     position: relative;
     top: 65px;
     padding-bottom: 40px;
+    margin-top: 25px;
 }
 
 main .content{
@@ -273,6 +274,26 @@ main .content{
     margin-top: 100px;
 }
 
+@media (max-width: 450px){
+    .brands .brandPart{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 850px){
+    .products{
+        flex-direction: column;
+        gap: 20px;
+        /* margin-left: 230px; */
+        position: relative;
+        left: 30%;
+    }
+/* 
+    .brands{
+        
+    } */
+}
 
 
 
