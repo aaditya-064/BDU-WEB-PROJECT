@@ -3,6 +3,7 @@ const navLinks = document.querySelector('.nav_links')
 const currentForm = document.getElementById("main_form")
 const emailAddress = document.querySelector(".email_")
 const submitButton = document.querySelector(".btn_")
+
 // const emailValue = emailAddress.value;
 
 

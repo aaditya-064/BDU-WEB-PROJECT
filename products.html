@@ -1,211 +1,162 @@
-
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Buddha Dana Udhyog | We produce productive animal products</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@100..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="products.css">
-    <link rel="website icon" type="img" href="buddha.png">
-    <script defer src="script.js"></script>
-</head>
-<body>
-    <header>
-        <navbar class="nav_bar container">
-            <div class="main_div">
-                <div class="nav_left">
-                    <a href="index.html"><img src="/assets/buddha.png"/></a> 
-                    <ul class="nav_links hide">
-                        <li><a href="products.html">Products <i class="fa-solid fa-angle-down"></i></a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                    
-                </div>
-                <div class="nav_right">
-                    <ul class="nav_links hide">
-                        <button class="menu">MENU</button>    
-                    </ul>
-                </div>
-            </div>
-        </navbar>
-    </header>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="products.css" />
+    <link rel="website icon" type="img" href="buddha.png" />
+    <script defer src="products.js"></script>
+  </head>
+  <body>
     <main>
-        <div class="main_div container">
-        <div class="brands">
-            <!-- <h1>Our Brands</h1>
-            <ul class="brand_name">
-                <li><a href="">Shraddha</a></li>
-                <li><a href="">Sirjan</a></li>
-            </ul> -->
-            <fieldset class="brands">
-                <legend>Our Brands</legend>
-                <div class="brandPart">
-                <p class="brand_name"><a href="">Shraddha</a></p>
-                <p class="brand_name"><a href="">Sirjan</a></p>
-                <p class="brand_name"><a href="">Saurya</a></p>
+        <section class="brandButton container">
+            <button id="shraddha">Shraddha</button>
+            <button id="sirjan">Sirjan</button>
+        </section>
+        <section class="shraddhaProducts hideShraddha">
+      <section class="broiler">
+        <div class="products_box">
+          <div class="broiler_div">
+            <div class="left_content">
+              <div class="broilerFinisher">
+                <img src="/assets/broilerFinisher.jpg" alt="" />
+                <p>Broiler Finisher</p>
+              </div>
+
+              <div class="broilerStarter">
+                <img src="/assets/broilerStarter.jpg" alt="" />
+                <p>Broiler Starter</p>
+              </div>
+
+              <div class="broilerPreStarter">
+                <img src="/assets/broilerPreStarter.jpg" alt="" />
+                <p>Broiler Pre Starter</p>
+              </div>
             </div>
-            </fieldset>
+            <div class="right_content">
+              <img src="/assets/broiler.jpg" alt="" />
+              <h3>Broiler Feed</h3>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="products_description shraddha">
-            <h1>Shraddha</h1>
-            <div class="products">
-                <div class="broiler">
-                    <img src="/assets/broiler.jpg">
-                    <h4>Broiler</h4>
-                    <ul class="tags_">
-                        <li><a href="">B0</a></li>
-                        <li><a href="">B1</a></li>
-                        <li><a href="">B2</a></li>
-                    </ul>
-                </div>
-                <div class="layers">
-                    <img src="/assets/layers.jpg">
-                    <h4>Layers</h4>
-                    <ul class="tags_">
-                        <li><a href="">L1</a></li>
-                        <li><a href="">L2</a></li>
-                        <li><a href="">L3</a></li>
-                    </ul>
-                </div>
+      <section class="layers">
+        <div class="products_box">
+          <div class="layers_div">
+            <div class="left_content">
+              <img src="/assets/layers.jpg" alt="" />
+              <h3>Layers Feed</h3>
             </div>
 
+            <div class="right_content">
+              <div class="layersFeed">
+                <img src="/assets/layersFeed.jpg" alt="" />
+                <p>Layers Feed</p>
+              </div>
 
-            
+              <div class="layersGrower">
+                <img src="/assets/layersGrower.jpg" alt="" />
+                <p>Layers Grower</p>
+              </div>
 
-        <div class="products_description srijan">
-            <h1>Srijan</h1>
-            <div class="products">
-                <div class="broiler">
-                    <img src="/assets/broiler1.jpg">
-                    <h4>Broiler</h4>
-                    <ul class="tags_">
-                        <li><a href="">B0</a></li>
-                        <li><a href="">B1</a></li>
-                        <li><a href="">B2</a></li>
-                    </ul>
-                </div>
-                <div class="giriraj">
-                    <img src="/assets/giriraj.jpg">
-                    <h4>Giriraj</h4>
-                    <ul class="tags_">
-                        <li><a href="">G1</a></li>
-                        <li><a href="">G2</a></li>
-                    </ul>
-                </div>
+              <div class="layersStarter">
+                <img src="/assets/layersStarter.jpg" alt="" />
+                <p>Layers Starter</p>
+              </div>
             </div>
-
-
-
-        <div class="products_description saurya">
-            <h1>Saurya</h1>
-            <div class="products">
-                <div class="broiler">
-                    <img src="https://images.pexels.com/photos/2006800/pexels-photo-2006800.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-                    <h4>Broiler</h4>
-                    <ul class="tags_">
-                        <li><a href="">B0</a></li>
-                        <li><a href="">B1</a></li>
-                        <li><a href="">B2</a></li>
-                    </ul>
-                </div>
-            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="products_description other">
-            <h1>Other Feeds</h1>
-            <div class="products other">
-                <div class="other">
-                    <img src="/assets/pig.jpg">
-                    <h4>Pig Feed</h4>
-                    <ul class="tags_" id="pig">
-                        <li><a href="">P0</a></li>
-                        <li><a href="">P1</a></li>
-                        <li><a href="">P2</a></li>
-                        <li><a href="">P3</a></li>
-                    </ul>
-                </div>
-                <div class="other">
-                    <img src="/assets/fish.jpeg">
-                    <h4>Fish Feed</h4>
-                    <ul class="tags_" id="fish">
-                        <li><a href="">Fish Feed Normal</a></li>
-                        <li><a href="">Fish H</a></li>
-                    </ul>
-                </div>
-                <div class="other">
-                    <img src="https://images.pexels.com/photos/422218/pexels-photo-422218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-                    <h4 class="cattle_head">Cattle Feed</h4>
-                    <ul class="tags_" id="cattle">
-                        <li><a href="">Cattle 25 KG</a></li>
-                        <li><a href="">Cattle 50 KG</a></li>
-                    </ul>
-                </div>
+      <section class="pig">
+        <div class="products_box">
+          <div class="pig_div">
+            <div class="left_content">
+              <div class="pigFinisher">
+                <img src="/assets/pigFinisher.jpg" alt="" />
+                <p>Pig Finisher Feed</p>
+              </div>
             </div>
-
+            <div class="right_content">
+              <img src="/assets/pig.jpg" alt="" />
+              <h3>Pig Feed</h3>
             </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="fish">
+        <div class="products_box">
+          <div class="fish_div">
+            <div class="left_content">
+              <img src="/assets/fish.jpeg" alt="" />
+              <h3>Fish Feed</h3>
+            </div>
+            <div class="right_content">
+              <div class="fishFeed">
+                <img src="/assets/fishFeed.jpg" alt="" />
+                <p>Fish Feed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
 
+      <!-- sirjan -->
+      <section class="sirjanProducts hideSirjan">
+      <section class="giriraj">
+        <div class="products_box">
+          <div class="giriraj_div">
+            <div class="left_content">
+              <div class="girirajStarter">
+                <img src="/assets/sirjanGirirajStarterG1.jpg" alt="" />
+                <p>Giriraj Feed</p>
+              </div>
+            </div>
+            <div class="right_content">
+              <img src="/assets/giriraj.jpg" alt="" />
+              <h3>Giriraj Feed</h3>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    </div>
+      <section class="broilerSirjan">
+        <div class="products_box">
+          <div class="broilerSirjan_div">
+            <div class="left_content">
+              <img src="/assets/broiler.jpg" alt="" />
+              <h3>Broiler Feed</h3>
+            </div>
+            <div class="right_content">
+              <div class="broilerGrower">
+                <img src="/assets/sirjanBroilerGrowerB2.jpg" alt="" />
+                <p>Broiler Grower Feed</p>
+              </div>
+              <div class="broilerPreStarter">
+                <img src="/assets/sirjanBroilerPreStarterB0.jpg" alt="" />
+                <p>Broiler Pre Starter Feed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
     </main>
-
-
-
-
-
-
-    
-    
-    <footer>
-        <div class="main_footer container">
-            <div class="company_info">
-                <h1>BDU PVT. LTD.</h1>
-                <h4>Siyari- 05, Rupandehi</h4>
-                <h4>Banghusari</h4>
-                <h4>071-413121</h4>
-                <h4>buddha.feeds@gmail.com</h4>
-            </div>
-
-            <div class="company_features">
-                <ul class="company_features_list">
-                    <li><a href="">Our Portfolio</a></li>
-                    <li><a href="">Our Profile</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <div class="company_services">
-                <!-- <h2>Get our high quality services</h2>
-                <h3>Input your E-mail for us to contact</h3>
-                <ul class="connect_email_">
-                    <input type="email" id="email" class="footer_email" placeholder="Your E-mail">
-                </ul> -->
-                <h2><a href="order.html">Order!</a></h2>
-                <h2><a href="https://maps.app.goo.gl/QmgGqhRePCbXciue8" target="blank">Locate Us!</a></h2>
-        </div>
-        </div>
-        <fieldset class="contact_way container">
-            <legend>Follow Us!</legend>
-            <ul class="contact_platform">
-            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-        </ul>
-        </fieldset>
-    </footer>
-
-
-    <script src="https://kit.fontawesome.com/2c92abfc3e.js" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
-
