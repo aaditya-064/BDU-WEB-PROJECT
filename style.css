@@ -179,7 +179,7 @@ header .nav_bar .logOutButton{
 }
 
 @media (max-width: 600px){
-    .nav_left .nav_links.hide{
+    .nav_right .nav_links.hide{
         display: none;
     }
 
@@ -196,7 +196,7 @@ header .nav_bar .logOutButton{
         /* flex-direction: column; */
     }
 
-    .nav_left .nav_links{
+    .nav_right .nav_links{
         font-size: 20px;
         flex-direction: column;
         position: absolute;
@@ -213,7 +213,7 @@ header .nav_bar .logOutButton{
 
     }
 
-    .nav_bar .nav_left .nav_links li a{
+    .nav_bar .nav_right .nav_links li a{
         color: black;
     }
 }
