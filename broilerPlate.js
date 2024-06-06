@@ -24,21 +24,6 @@ menuButton.addEventListener("click", () => {
   navLinks.classList.toggle("hide");
 });
 
-currentForm.addEventListener("submit", (e) => {
-  // const arr = []
-  e.preventDefault();
-  // console.log("SUBMITTED SUCCESSFULLY");
-  alert("Submitted Successfully");
-  // console.log(emailValue)
-  console.log(emailAddress.value);
-  // emailAddress.value = " "
-  const storage = {
-    email: emailAddress.value,
-  };
-  JSON.stringify(storage);
-  localStorage.setItem("email", storage.email);
-});
-
 window.onload = () => {
   const getCurrentLoggedUser = localStorage.getItem("logged_user");
   if (getCurrentLoggedUser) {
