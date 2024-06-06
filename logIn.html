@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="logIn.css" />
+    <script
+      src="https://kit.fontawesome.com/2c92abfc3e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="logIn.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav_bar container">
+        <h3 class="easySkill"><span>Buddha</span>Dana Udhyog</h3>
+        <div class="signInCheck">
+          <p>Don't have an account?</p>
+          <a href="signUp.html"
+            ><button class="signUpButton">Sign Up</button></a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="logInPage">
+        <img src="/assets/osho.jpg" alt="" />
+        <div class="content_div">
+          <p>START YOUR JOURNEY</p>
+          <h2>Hi, Welcome Back!</h2>
+
+          <form class="inputForm">
+            <div class="inputArea">
+              <input id="email" type="email" placeholder="Email" />
+              <input id="pass" type="password" placeholder="Password" />
+            </div>
+            <a href="" class="aTagPass"
+              ><p class="resetPassword">Forgot your password?</p></a
+            >
+            <a href=""
+              ><button id="signInButton" class="signInButton">Log In</button></a
+            >
+          </form>
+
+          <div class="signInWith">
+            <h4>Sign In With</h4>
+            <ul class="medias">
+              <a href=""
+                ><li><i class="fa-brands fa-google"></i></li
+              ></a>
+              <a href=""
+                ><li><i class="fa-brands fa-apple"></i></li
+              ></a>
+              <a href=""
+                ><li><i class="fa-brands fa-facebook-f"></i></li
+              ></a>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    padding-top: 40px;
+    background: linear-gradient(to bottom, #A34343, white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    /* background: orange; */
+}
+
+.contact_ .div_contact p{
+    font-family: sans-serif;
+    letter-spacing: 2px;   
+    font-size: 15px;
+}
+
+.contact_ .div_contact h1{
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #7D0A0A;
+}
+
+.contact_ .div_contact .contact_form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact_ .div_contact .contact_form .name_email{
+    display: flex;
+    gap: 20px;
+}
+
+.contact_ .div_contact .contact_form .name_email input{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #CED4DA;
+    font-size: 17px;
+    outline: 0;
+    border-radius: 5px;
+    background: #EEE2DE;
+}
+
+.contact_ .div_contact .contact_form textarea{
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 17px;
+    outline: 0; 
+    border-radius: 5px;
+    resize: vertical;
+    border: 1px solid #CED4DA;
+    background: #EEE2DE;
+}
+
+.contact_ .div_contact .contact_form .submitBtn{
+    width: 140px;
+    padding: 9px;
+    background: white;
+    border: 1px solid #7D0A0A;
+    color: #7D0A0A;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+.contact_ .div_contact .contact_form .submitBtn:hover{
+    background: #7D0A0A;
+    color: white;
+}

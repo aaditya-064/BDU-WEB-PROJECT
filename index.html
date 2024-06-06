@@ -16,38 +16,53 @@
   </head>
   <body>
     <header>
-      <navbar class="nav_bar container">
-        <div class="main_div">
-          <div class="nav_left">
-            <a href="index.html"><img src="https://aaditya-064.github.io/BDU-WEB-PROJECT/assets/buddha.png" /></a>
-            <ul class="nav_links hide">
-              <li>
-                <a href="products.html"
-                  >Products <i class="fa-solid fa-angle-down"></i
-                ></a>
-              </li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="#">Our Services</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
+
+      <nav class="top_nav">
+        <div class="connection_div container">
+          <h4><a href="signUp.html">Sign Up</a></h4>
+          <p>or</p>
+          <h4><a href="logIn.html">Log In</a></h4>
+        </div>
+      </nav>
+      <nav id="sticky_nav" class="nav_bar">
+        <div class="main_nav container">
+          <div class="main_div">
+            <div class="nav_left">
+            <p id="namePrint" class="namePrint"></p>
+            <a href="index.html"
+              ><img
+                src="https://aaditya-064.github.io/BDU-WEB-PROJECT/assets/buddha.png"
+            /></a>
           </div>
           <div class="nav_right">
+            <ul class="nav_links hide">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Our Products</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Profile</a></li>
+            </ul>
+            <div class="button_div">
+              <button id="logOut" class="logOutButton">Log Out</button>
+            </div>
             <ul class="nav_links hide">
               <button class="menu">MENU</button>
             </ul>
           </div>
         </div>
-      </navbar>
-    </header>
-
-    <main>
-      <div class="content">
-        <img
-          src="https://lh3.googleusercontent.com/p/AF1QipN-P-HzB4VZk37_kl7Qz9dY936hQ4TSevue7drU=s1360-w1360-h1020"
-        />
-
-        <div class="inside_text">
-          <div class="inside_text_content">
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="content">
+      <img
+      src="https://lh3.googleusercontent.com/p/AF1QipN-P-HzB4VZk37_kl7Qz9dY936hQ4TSevue7drU=s1360-w1360-h1020"
+      />
+      
+      <div class="inside_text">
+        <div class="inside_text_content">
             <h1>Buddha Dana Udhyog Pvt. Ltd.</h1>
             <h4>
               Innovating feed solutions for sustainable agriculture in Nepal
@@ -59,10 +74,10 @@
             <form id="main_form">
               <div class="connect_email_">
                 <input
-                  type="email"
-                  id="email"
-                  class="email_"
-                  placeholder="Enter your Email Address"
+                type="email"
+                id="email"
+                class="email_"
+                placeholder="Enter your Email Address"
                 />
                 <button type="submit" id="btn" class="btn_" onclick="addData()">
                   Submit
@@ -72,13 +87,15 @@
           </ul>
         </div>
       </div>
-
+      
       <section class="container">
         <div class="sub_div">
           <h1>Our Qualities</h1>
           <div class="qualities_">
             <div class="icon_box">
-              <img src="https://aaditya-064.github.io/BDU-WEB-PROJECT/assets/delivery.png" />
+              <img
+                src="https://aaditya-064.github.io/BDU-WEB-PROJECT/assets/delivery.png"
+              />
               <h4>FAST DELIVERY</h4>
             </div>
             <div class="icon_box">
@@ -89,12 +106,16 @@
             </div>
 
             <div class="icon_box">
-              <img src="https://aaditya-064.github.io/BDU-WEB-PROJECT/assets/chicken.png" />
+              <img
+                src="https://aaditya-064.github.io/BDU-WEB-PROJECT/assets/chicken.png"
+              />
               <h4>NUTRIENT RICH FEED</h4>
             </div>
 
             <div class="icon_box">
-              <img src="https://aaditya-064.github.io/BDU-WEB-PROJECT/assets/positive.png" />
+              <img
+                src="https://aaditya-064.github.io/BDU-WEB-PROJECT/assets/positive.png"
+              />
               <h4>OPTIMISTIC PRODUCT</h4>
             </div>
           </div>
@@ -146,11 +167,10 @@
 
         <div class="company_features">
           <ul class="company_features_list">
-            <li><a href="">Our Portfolio</a></li>
             <li><a href="">Our Profile</a></li>
             <li><a href="">Blog</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
 

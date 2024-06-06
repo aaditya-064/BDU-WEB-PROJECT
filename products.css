@@ -11,12 +11,14 @@ body{
     font-variation-settings:
       "slnt" 0;
     padding-top: 40px;
-    background: #E1F4F3;
+    background: #EEEEEE;
+    overflow-x: hidden;
 }
 
 .container{
     max-width: 1200px;
     margin: auto;
+    /* background: black; */
 }
 
 main .brandButton{
@@ -37,9 +39,13 @@ main .brandButton button{
     cursor: pointer;
 }
 
+.deactive{
+    opacity: 0.3;
+}
+/* 
 main .brandButton button:hover{
     opacity: 0.8;
-}
+} */
 
 
 main .hideShraddha{
@@ -50,19 +56,24 @@ main .hideSirjan{
     display: none;
 }
 
-main .broiler .products_box .broiler_div{
+main .right {
+    background: white;
+    margin-top: 50px;
+}
+
+main .right .products_box .right_div{
     display: flex;
     justify-content: right;
     position: relative;
     right: 200px;
     /* gap: 30px; */
     /* background: #E1F4F3; */
-    gap: 7px;
+    gap: 30px;
     padding: 10px;
     /* width: 1000px; */
 }
 
-main .broiler .products_box .broiler_div .left_content{
+main .right .products_box .right_div .left_content{
     display: flex;
     text-align: center;
     align-items: center;
@@ -71,11 +82,11 @@ main .broiler .products_box .broiler_div .left_content{
     /* height: 210px; */
 }
 
-main .broiler .products_box .broiler_div .left_content img{
+main .right .products_box .right_div .left_content img{
     border-radius: 5px;
 }
 
-main .broiler .products_box .broiler_div .right_content{
+main .right .products_box .right_div .right_content{
     height: 300px;
     /* background: orange; */
     display: flex;
@@ -84,7 +95,7 @@ main .broiler .products_box .broiler_div .right_content{
     justify-content: center;
 }
 
-main .broiler .products_box .broiler_div .right_content img{
+main .right .products_box .right_div .right_content img{
     height: 300px;
     width: 300px;
     border-radius: 4px;
@@ -92,24 +103,25 @@ main .broiler .products_box .broiler_div .right_content img{
 
 /* break */
 
-main .layers{
+main .left{
     margin-top: 50px;
-    width: 1000px;
+    /* width: 400px; */
+    background: #F5E8DD;
 }
 
-main .layers .products_box .layers_div{
+main .left .products_box .left_div{
     display: flex;
     justify-content: left;
     position: relative;
     left: 200px;
     /* gap: 30px; */
     /* background: #E1F4F3; */
-    gap: 7px;
+    gap: 30px;
     padding: 10px;
     /* width: 1000px; */
 }
 
-main .layers .products_box .layers_div .right_content{
+main .left .products_box .left_div .right_content{
     display: flex;
     text-align: center;
     align-items: center;
@@ -118,11 +130,11 @@ main .layers .products_box .layers_div .right_content{
     /* height: 210px; */
 }
 
-main .layers .products_box .layers_div .right_content img{
+main .left .products_box .left_div .right_content img{
     border-radius: 5px;
 }
 
-main .layers .products_box .layers_div .left_content{
+main .left .products_box .left_div .left_content{
     height: 300px;
     /* background: orange; */
     display: flex;
@@ -131,206 +143,26 @@ main .layers .products_box .layers_div .left_content{
     justify-content: center;
 }
 
-main .layers .products_box .layers_div .left_content img{
+main .left .products_box .left_div .left_content img{
     height: 300px;
     width: 300px;
     border-radius: 4px;
 }
-
-
-/* pig */
-main .pig{
-    margin-top: 50px;
-}
-
-main .pig .products_box .pig_div{
-    display: flex;
-    justify-content: right;
-    position: relative;
-    right: 200px;
-    /* gap: 30px; */
-    /* background: #E1F4F3; */
-    gap: 7px;
-    padding: 10px;
-    /* width: 1000px; */
-}
-
-main .pig .products_box .pig_div .left_content{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    gap: 15px;
-    position: relative;
-    /* height: 210px; */
-}
-
-main .pig .products_box .pig_div .left_content img{
-    border-radius: 5px;
-}
-
-main .pig .products_box .pig_div .right_content{
-    height: 300px;
-    /* background: orange; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-main .pig .products_box .pig_div .right_content img{
-    height: 300px;
-    width: 300px;
-    border-radius: 4px;
-}
-
-/* fish */
-main .fish{
-    margin-top: 50px;
-    width: 1000px;
-}
-
-main .fish .products_box .fish_div{
-    display: flex;
-    justify-content: left;
-    position: relative;
-    left: 200px;
-    /* gap: 30px; */
-    /* background: #E1F4F3; */
-    gap: 7px;
-    padding: 10px;
-    /* width: 1000px; */
-}
-
-main .fish .products_box .fish_div .right_content{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    gap: 15px;
-    position: relative;
-    /* height: 210px; */
-}
-
-main .fish .products_box .fish_div .right_content img{
-    border-radius: 5px;
-}
-
-main .fish .products_box .fish_div .left_content{
-    height: 300px;
-    /* background: orange; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-main .fish .products_box .fish_div .left_content img{
-    height: 300px;
-    width: 300px;
-    border-radius: 4px;
-}
-
-
-
-/* break */
-/* giriraj */
-
-main .giriraj{
-    margin-top: 50px;
-}
-
-main .giriraj .products_box .giriraj_div{
-    display: flex;
-    justify-content: right;
-    position: relative;
-    right: 200px;
-    /* gap: 30px; */
-    /* background: #E1F4F3; */
-    gap: 7px;
-    padding: 10px;
-    /* width: 1000px; */
-}
-
-main .giriraj .products_box .giriraj_div .left_content{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    gap: 15px;
-    position: relative;
-    /* height: 210px; */
-}
-
-main .giriraj .products_box .giriraj_div .left_content img{
-    border-radius: 5px;
-}
-
-main .giriraj .products_box .giriraj_div .right_content{
-    height: 300px;
-    /* background: orange; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-main .giriraj .products_box .giriraj_div .right_content img{
-    height: 300px;
-    width: 300px;
-    border-radius: 4px;
-}
-
-/* broiler Sirjan */
-main .broilerSirjan{
-    margin-top: 50px;
-    width: 1000px;
-}
-
-main .broilerSirjan .products_box .broilerSirjan_div{
-    display: flex;
-    justify-content: left;
-    position: relative;
-    left: 200px;
-    /* gap: 30px; */
-    /* background: #E1F4F3; */
-    gap: 7px;
-    padding: 10px;
-    /* width: 1000px; */
-}
-
-main .broilerSirjan .products_box .broilerSirjan_div .right_content{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    gap: 15px;
-    position: relative;
-    /* height: 210px; */
-}
-
-main .broilerSirjan .products_box .broilerSirjan_div .right_content img{
-    border-radius: 5px;
-}
-
-main .broilerSirjan .products_box .broilerSirjan_div .left_content{
-    height: 300px;
-    /* background: orange; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-main .broilerSirjan .products_box .broilerSirjan_div .left_content img{
-    height: 300px;
-    width: 300px;
-    border-radius: 4px;
-}
-
-
-
-
-
-
 
 img{
     width: 150px;
     height: 200px;
 }
+img.main_img{
+    height: 100px !important;
+    width: 100px !important;
+    /* border: 1px solid black; */
+}
+
+
+
+
+
+
+
+

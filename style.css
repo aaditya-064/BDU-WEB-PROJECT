@@ -16,47 +16,94 @@ body{
     height: auto;
 }
 
-.container {
-    max-width: 1000px;
+.container {    
+    max-width: 1200px;
     margin: auto;
+    /* border: 1px solid black; */
 }
 
 
 header{
-    height: 60px;
-    background: #8B0000;
-    display: flex;
-    position: fixed;
+    /* height: 0px; */
+    background: #800000;
     top: 0;
     width: 100%;
     z-index: 1;
-    align-items: center;
-    font-size: 14px;
-    justify-content: center;
+    font-size: 16px;
+    
+}
+
+header .top_nav{
+    background: white;
+    height: 40px;
+}
+
+.displayNone{
+    display: none;
+}
+
+header .top_nav .connection_div{
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    gap: 10px;
+}
+
+header .top_nav .connection_div p{
+    color: #053B50;
+    font-weight: bold;
+}
+
+header .top_nav .connection_div h4 a{
+    color: #0766AD;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #0766AD;
+
 }
 
 header .nav_bar {
-    background: #8B0000;
+    background: #800000;
     width: 100%;    
+    height: 70px;
+    /* border: 1px solid black; */
+    /* height: 100%; */
+    /* margin-top: 20px; */
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+header .nav_bar.sticky{
+    position:fixed;
+    width: 100%;
+    top: 0px;
+    animation: navTransition 0.5s ease-in-out;
+}
+
+header .nav_bar .main_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header .nav_bar .main_div{
     display: flex;    
     justify-content: space-between;  
     align-items: center;
-    gap: 30px;
+    width: 100%;
+    gap: 120px;
 }
 
 header .nav_bar .main_div .nav_left {
     display: flex;
 }
 
+
 header .nav_bar .main_div .nav_left img{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    outline: 0;
 
 }
 
@@ -101,9 +148,34 @@ header .nav_bar .nav_links {
     list-style-type: none;
 }
 
-.nav_bar .nav_left .nav_links li a{
+header .nav_bar .namePrint{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 20px;
+    /* z-index: 519; */
+    color: white;
+}
+
+header .nav_bar .logOutButton{
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    padding: 7px 15px;
+    border: 0;
+    outline: 0;
+    /* background: #800000; */
+    background: #7882A4;
+    color: white;
+    border-radius: 10px;
+
+
+}
+
+.nav_bar .nav_right .nav_links li a{
     text-decoration: none;
     color: white;
+    font-weight: 500;
 }
 
 @media (max-width: 600px){
@@ -171,6 +243,8 @@ main .content .inside_text {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+
 main .content .inside_text_content{
     color: #fff;
 }
@@ -505,5 +579,17 @@ footer .company_services h2 a:hover{
     .contact_platform{
         flex-direction: column;
         /* background: orange; */
+    }
+}
+
+
+@keyframes navTransition{
+    0%{
+        top:-400px;
+        opacity:0;
+    }
+    100%{
+        top:0;
+        opacity: 1
     }
 }
