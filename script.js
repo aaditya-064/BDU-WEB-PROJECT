@@ -46,9 +46,10 @@ window.onload = () => {
     const parseUser = JSON.parse(getCurrentLoggedUser);
     namePrintArea.innerHTML = ` Hi, ${
       parseUser.firstName + " " + parseUser.lastName
-    } 👋`;
-    // console.log(parseUser.firstName)
-  } else {
+      } 👋`;
+      // console.log(parseUser.firstName)
+      } else {
+    // console.log('hello')
     logOutButton.classList.add("displayNone");
     navLinks.classList.add("marginNavLinks");
   }

@@ -39,7 +39,7 @@ window.onload = () => {
   sirjanButton.classList.add("deactive");
   console.log("hello");
   const getCurrentLoggedUser = localStorage.getItem("logged_user");
-  if (!getCurrentLoggedUser) {
+  if (!getCurrentLoggedUser || getCurrentLoggedUser) {
     logOutButton.classList.add("displayNone");
     // navLinks.classList.add("marginNavLinks");
   }
