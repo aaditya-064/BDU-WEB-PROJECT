@@ -21,10 +21,6 @@ menuButton.addEventListener("click", () => {
   navLinks.classList.toggle("hide");
 });
 
-window.onload = (e) => {
-  
-};
-
 logOutButton.addEventListener("click", () => {
   localStorage.removeItem("logged_user");
   window.location.replace("index.html");
@@ -41,7 +37,7 @@ const sirjanProducts = document.querySelector(".sirjanProducts");
 window.onload = () => {
   shraddhaProducts.classList.remove("hideShraddha");
   sirjanButton.classList.add("deactive");
-//   console.log("hello");
+  console.log("hello");
   const getCurrentLoggedUser = localStorage.getItem("logged_user");
   if (!getCurrentLoggedUser) {
     logOutButton.classList.add("displayNone");
